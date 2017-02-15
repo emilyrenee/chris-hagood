@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
   		var chevronOpen = ".chevron-bottom";
       $(this).next().toggle('slow');
       $(chevronClosed).hide();
-      $(this).append(chevronOpen);
+      $(this).appendClass("chevron-bottom");
       // return false;
   }).next().hide();
 });
