@@ -7,7 +7,11 @@
 
 jQuery(document).ready(function(){
   $('.coverage-group h3').click(function() {
+  		var chevronClosed = ".chevron";
+  		var chevronOpen = ".chevron-bottom";
       $(this).next().toggle('slow');
+      $(chevronClosed).hide();
+      $(this).append(chevronOpen);
       // return false;
   }).next().hide();
 });

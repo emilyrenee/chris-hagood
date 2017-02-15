@@ -232,7 +232,7 @@ ul {
 	padding: 1em;
 }
 
-/*.chevron::before {
+.chevron::before {
 	border-style: solid;
 	border-width: 0.25em 0.25em 0 0;
 	content: '';
@@ -241,20 +241,25 @@ ul {
 	left: 0.15em;
 	position: relative;
 	top: 0.15em;
-	transform: rotate(-45deg);
+	transform: rotate(45deg);
 	vertical-align: top;
 	width: 0.45em;
 }
 
-.chevron.bottom:before {
-	top: 0;
+.chevron-bottom:before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
 	transform: rotate(135deg);
+	vertical-align: top;
+	width: 0.45em;
+	top: 0;
 }
-
-.chevron.right:before {
-	left: 0;
-	transform: rotate(45deg);
-}*/
 
 
 .item {
