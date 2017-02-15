@@ -194,13 +194,15 @@ ul {
 	flex-direction: column;
 	background: url(../img/play.png);
 	background-color: #F0F0F0;
+	justify-content: flex-end;
+	padding-right: 5em;
 }
 
 
 .coverage-group {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	justify-content: flex-end;
 }
 
 
@@ -261,7 +263,7 @@ ul {
 	padding: 15px;
 	margin: 5px;
 	max-width: 800px;
-	margin: auto;
+	align-self: flex-end;
 }
 
 
@@ -307,7 +309,7 @@ ul {
 }
 
 .hidden {
-	visibility: collapse;
+	display: none;
 }
 	
 /***********CONTACT *****************/
@@ -344,8 +346,8 @@ ul {
 @media (min-width: 769px) {
 
 	.content-wrap {
-	  padding-left: 5em;
-	  padding-right: 5em;
+	  padding-left: 8em;
+	  padding-right: 8em;
 	  display: flex;
 	  flex-wrap: wrap;
 
@@ -406,6 +408,12 @@ ul {
 
 	.coverage {
 		order: -1;
+		padding-left: 10em;
+		padding-right: 7em;
+	}
+
+	.item {
+		align-self: flex-start;
 	}
 
 	.about {
@@ -425,8 +433,6 @@ ul {
 
 	.about .col-1 img {
 		margin-top: 1.5em;
-		width: 75%;
-		height: 75%;
 		border: 1px solid #FDFDFD;
 	}
 
@@ -436,11 +442,11 @@ ul {
 
 
 	.col-2 {
-	flex: 2;
-	flex-wrap: wrap;
+		flex: 2;
+		flex-wrap: wrap;
 	}
 
 	.hidden {
-		visibility: visible;
+		display: inline-block;
 	}
 }
