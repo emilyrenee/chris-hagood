@@ -293,8 +293,8 @@ ul {
 
 
 .about img {
-	width: 90%;
-	height: 90%;
+	width: 80%;
+	height: 80%;
 	border: 1px solid #FDFDFD;
 	flex: 1;
 }
@@ -382,7 +382,7 @@ ul {
 	.logo-wrap h1 {
 		display: inline;
 		align-self: flex-start;
-		font-size: 175%;
+		font-size: 150%;
 	}
 
 	#jumbotron {
@@ -428,7 +428,7 @@ ul {
 		margin-top: 0;
 	}
 
-	.about .content-wrap {
+	.content-wrap {
 		flex-wrap: wrap;
 	}
 
@@ -447,8 +447,7 @@ ul {
 
 
 	.col-2 {
-		flex: 2;
-		flex-wrap: wrap;
+		flex: 1;
 	}
 
 	.hidden {
