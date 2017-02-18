@@ -15,13 +15,7 @@ a {
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;	
-  font-size: 150%;
-  line-height: 1;
-  font-weight: 700;
-  margin-top: .5em;
-  margin-right: 1em;
-  margin-left: 1em;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -30,9 +24,6 @@ body {
 }
 
 h3 {
-  line-height: 1;
-  margin-left: 2.25em;
-  margin-bottom: .5em;
   color: #3E4350;
 }
 
@@ -60,7 +51,7 @@ ul {
 	justify-content: center;
 }
 
-.center-heading {
+.large-text {
 	display: inline-block;
 	margin-top: 2em;
 	margin: auto;
@@ -70,7 +61,7 @@ ul {
 }
 
 
-/*********HEADER & NAVIGATION**********/
+/*********HEADER**********/
 
 #header {
 	display: flex;
@@ -79,13 +70,14 @@ ul {
 	top: 0;
 	position: fixed;
 	width: 100%;
-	height: 260px;
+	height: 220px;
 }
 
 .main-header {
 	display: flex;
 	background-color: #F0F0F0;
 	justify-content: center;
+	margin-bottom: 0;
 }
 
 .main-header a {
@@ -143,22 +135,7 @@ ul {
 }
 
 
-/*desktop */
-/*.main-nav a {
-	text-decoration: none;
-	color: white;
-}
-
-.main-nav a:hover {
-	color: #00B5B5;
-}
-
-.main-nav a:visited {
-	text-decoration: none;
-	color: white;
-}
-*/
-/************ Jumbotron **************/
+/************ JUMBOTRON **************/
 #jumbotron {
 	display: none;
 }
@@ -176,7 +153,6 @@ ul {
 	background: url(../img/play.png);
 	background-color: #F0F0F0;
 	justify-content: flex-end;
-	padding-right: 5em;
 }
 
 
@@ -190,13 +166,21 @@ ul {
 .coverage-group h3 {
 	color: #00B5B5;
 	cursor: pointer;
-	font-size: 150%;
+	align-self: flex-end;
 }
 
-/*.coveragegroup .item:last-child {
+/* add extra padding to first and last child of coverage list
+
+.coveragegroup .item:last-child {
 	padding-bottom: 1em;
 }*/
 
+.item {
+	border-radius: 3px;
+	padding: 15px;
+	margin: 5px;
+	max-width: 800px;
+}
 
 .coverage-group p {
 	color: #3E4651;
@@ -242,15 +226,6 @@ ul {
 	top: 0;
 }
 
-
-.item {
-	flex-grow: 1;
-	border-radius: 3px;
-	padding: 15px;
-	margin: 5px;
-	max-width: 800px;
-	align-self: flex-end;
-}
 
 
 /***********ABOUT *****************/
@@ -351,13 +326,13 @@ ul {
 
 	.main-header a {
 		display: inline-block;
-		margin-bottom: 1em;
+		margin-bottom: 0;
 	}
 
 
 	#jumbotron {
 		display: flex;
-		margin-top: 260px;
+		margin-top: 240px;
 		order: -2;
 		height: 200px;
 	}
@@ -387,12 +362,11 @@ ul {
 		padding-right: 7em;
 	}
 
-	.item {
+	.coverage h3 {
 		align-self: flex-start;
 	}
 
 	.about {
-		flex-wrap: wrap;
 		flex-direction: row;
 		order: 0;
 		margin-top: 0;
@@ -402,21 +376,18 @@ ul {
 		flex-wrap: wrap;
 	}
 
-	.about .col-1 {
-		flex: 1;
-	}
-
-	.about .col-1 img {
+	.about img {
 		margin-top: 1.5em;
 		border: 1px solid #FDFDFD;
+		float: left;
 	}
+/*
+	.about .col-2 {
+		flex-wrap: wrap;
+	}*/
 
 	.about h4, ul {
 		padding-left: 3em;
-	}
-
-	.about .col-2 {
-		flex: 1;
 	}
 
 	.hidden {
