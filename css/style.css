@@ -178,6 +178,9 @@ ul {
 	color: #00B5B5;
 	cursor: pointer;
 	align-self: flex-end;
+	padding: .75em;
+	font-family: 'Poiret One', cursive;
+	font-size: 140%;
 }
 
 /* add extra padding to first and last child of coverage list
@@ -253,25 +256,32 @@ ul {
 
 .about p {
 	display: block;
-	padding: 1em;
+	padding-top: 1em;
 	margin: auto;
-	align-self: center;
+	color: #3E4651;
 }
 
+.about .col-1 {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
 
 .about img {
-	width: 50%;
-	height: 50%;
+	width: 70%;
+	height: 70%;
 	border: 1px solid #FDFDFD;
 	flex: 1;
-	margin-right: 4em;
-	margin-left: 4em;
 }
 
 .col-2 {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+}
+
+.about .col-2 {
+	justify-content: center;
 }
 
 .about a {
@@ -284,6 +294,7 @@ ul {
 
 .hidden {
 	display: none;
+	color: #3E4651;
 }
 	
 /***********CONTACT *****************/
@@ -305,6 +316,7 @@ ul {
 .contact ul {
 	flex-direction: column;
 	align-self: center;
+	text-align: center;
 }
 
 .contact li {
@@ -312,12 +324,14 @@ ul {
 	margin: auto;
 }
 
+
 .copyright {
 	display: flex;
 	justify-content: center;
 	align-self: center;
 	font-size: 60%;
     color: #F16233;
+    padding-top: 1em;
 }
 
 
@@ -335,7 +349,7 @@ ul {
 	}
 
 	#header {
-		height: 220px;
+		height: 180px;
 	}
 
 	.main-header {
@@ -364,7 +378,7 @@ ul {
 
 	#jumbotron {
 		display: flex;
-		margin-top: 220px;
+		margin-top: 180px;
 		order: -2;
 		height: 200px;
 	}
@@ -389,13 +403,26 @@ ul {
 	}
 
 	.coverage {
+		display: flex;
 		order: -1;
-		padding-left: 10em;
-		padding-right: 7em;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.coverage .content-wrap {
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.coverage h3 {
 		align-self: flex-start;
+		padding: 1em;
+	}
+
+	.coverage-group {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.about {
@@ -404,22 +431,38 @@ ul {
 		margin-top: 0;
 	}
 
-	.about img {
+	.about .content-wrap img {
 		margin-top: 1.5em;
 		border: 1px solid #FDFDFD;
 		float: left;
+		max-width: 30%;
+		max-height: 35%;
 	}
 /*
 	.about .col-2 {
 		flex-wrap: wrap;
 	}*/
 
+	.about h4 {
+		margin-top: 1em;
+		color: #F16233;
+	}
+
 	.about h4, ul {
-		padding-left: 3em;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.about p {
+		float: right;
+		max-width: 40%;
 	}
 
 	.hidden {
 		display: inline-block;
+		float: right;
+		max-width: 100%;
+		clear: both;
 	}
 
 	.contact .col-1 {
@@ -427,9 +470,4 @@ ul {
 		justify-content: space-around;
 	}
 
-	.contact ul {
-		align-self: flex-end;
-		margin-bottom: 1em;
-		margin-right: 4em;
-	}
 }
