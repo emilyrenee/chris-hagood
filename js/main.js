@@ -6,11 +6,8 @@
 
 
 jQuery(document).ready(function(){
-  $('.coverage-group h3').click(function() {
-  		var chevronClosed = ".chevron";
-  		var chevronOpen = ".chevron-bottom";
+  $('.box h3').click(function() {
       $(this).next().toggle('slow');
-      $(chevronClosed).hide();
       // return false;
   }).next().hide();
 });

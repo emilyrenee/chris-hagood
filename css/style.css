@@ -163,80 +163,30 @@ ul {
 	flex-direction: column;
 	background: url(../img/play.png);
 	background-color: #F0F0F0;
-	justify-content: flex-end;
+	justify-content: center;
 }
 
-
-.coverage-group {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
-
-.coverage-group h3 {
-	color: #00B5B5;
-	cursor: pointer;
-	align-self: flex-end;
-}
-
-/* add extra padding to first and last child of coverage list
-
-.coveragegroup .item:last-child {
-	padding-bottom: 1em;
-}*/
-
-.item {
-	border-radius: 3px;
-	padding: 15px;
-	margin: 5px;
-	max-width: 800px;
-}
-
-.coverage-group p {
-	color: #3E4651;
-	padding: 15px;
-	background-color: #FFF;
-}
-
-.coverage-group p::first-line {
-	font-size: 125%;
-}
-
-.coverage-group img {
-	max-width: 76%;
+.box {
+	background-color: #F16233;
+	width: 40vh;
+	height: 40vh;
+	margin: .75em;
 	padding: 1em;
+	display: flex;
+	align-self: center;
 }
 
-.chevron::before {
-	border-style: solid;
-	border-width: 0.25em 0.25em 0 0;
-	content: '';
-	display: inline-block;
-	height: 0.45em;
-	left: 0.15em;
-	position: relative;
-	top: 0.15em;
-	transform: rotate(45deg);
-	vertical-align: top;
-	width: 0.45em;
+.box-clicked {
+	background-color: #F0F0F0;
 }
 
-.chevron-bottom:before {
-	border-style: solid;
-	border-width: 0.25em 0.25em 0 0;
-	content: '';
-	display: inline-block;
-	height: 0.45em;
-	left: 0.15em;
-	position: relative;
-	top: 0.15em;
-	transform: rotate(135deg);
-	vertical-align: top;
-	width: 0.45em;
-	top: 0;
+.box h3 {
+	color: white;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	font-size: 150%;
 }
-
 
 
 /***********ABOUT *****************/
@@ -256,6 +206,7 @@ ul {
 	padding: 1em;
 	margin: auto;
 	align-self: center;
+	color: #3E4651;
 }
 
 
@@ -274,16 +225,10 @@ ul {
 	flex: 1;
 }
 
-.about a {
-	color: #F16233;
-}
-
-.about a:hover {
-	color: #F16233;
-}
 
 .hidden {
 	display: none;
+	color: #00B5B5;
 }
 	
 /***********CONTACT *****************/
@@ -390,12 +335,8 @@ ul {
 
 	.coverage {
 		order: -1;
-		padding-left: 10em;
-		padding-right: 7em;
-	}
-
-	.coverage h3 {
-		align-self: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.about {
