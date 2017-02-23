@@ -166,18 +166,43 @@ ul {
 	justify-content: center;
 }
 
+.coverage-wrap {
+	max-width: 100%;
+	display: flex;
+}
+
 .box {
-	background-color: #F16233;
+	background-color: #00B5B5;
 	width: 40vh;
 	height: 40vh;
 	margin: .75em;
 	padding: 1em;
 	display: flex;
 	align-self: center;
+	cursor: pointer;
+}
+
+.item {
+	text-align: center;
+	display: none;
+}
+
+.box-hover {
+	background-color: #009B9B;
+	border: solid 1px #F0F0F0;
+	width: 40vh;
+	height: 40vh;
+	margin: .75em;
+	padding: 1em;
+	display: flex;
+	align-self: center;
+	cursor: pointer;
 }
 
 .box-clicked {
 	background-color: #F0F0F0;
+	width: 50%;
+	height: 50%;
 }
 
 .box h3 {
@@ -336,7 +361,13 @@ ul {
 	.coverage {
 		order: -1;
 		flex-direction: row;
+	}
+
+	.coverage-wrap {
+		max-width: 80%;
+		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.about {
