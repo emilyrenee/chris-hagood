@@ -169,6 +169,8 @@ ul {
 .coverage-wrap {
 	max-width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .box {
@@ -183,11 +185,6 @@ ul {
 	flex-direction: column;
 }
 
-button {
-	cursor: pointer;
-	align-self: center;
-	margin: auto;
-}
 
 .item {
 	width: 100%;
@@ -203,9 +200,9 @@ button {
 	border: solid 1px #F0F0F0;
 }
 
-.box:selected {
-	width: 50%;
-	height: 50%;
+.box-expanded {
+	width: 80vh;
+	height: 80vh;
 	text-align: center;
 	background-color: #F0F0F0;
 }
@@ -218,6 +215,14 @@ button {
 	font-size: 150%;
 }
 
+.box p, h4, h5, h6, ul {
+	text-align: left;
+	margin: .5em;
+}
+
+.box h4, h5, h6 {
+	display: block;
+}
 
 /***********ABOUT *****************/
 .about {

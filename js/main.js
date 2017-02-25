@@ -20,5 +20,6 @@ var child = ".item";
 jQuery(document).ready(function(){
 	$('.box').click(function(){
 		$(this).children().slideToggle('slow');
-		});
+		// $(this).removeClass('box').addClass('box-expanded');
 	});
+});
