@@ -1,36 +1,27 @@
-//$(".health p").hide();
 
-//$(".health h3").click(function() {
- //$(".health p").toggle();
-//});
 
+
+// var content = ".item";
+
+// jQuery(document).ready(function(){
+// 	$('.box').click(function() {
+// 		console.log('here');
+//   		$(this).slideToggle('slow');
+//   		$(this).addClass("box-clicked").removeClass("box");
+//   		//hide all other boxes
+//   		$('.box').hide();
+//   		$(this).children(content).show();
+//   		$(this).toggle('slow');
+//   	});
+// });
+
+var child = ".item";
 
 jQuery(document).ready(function(){
-  $('.coverage-group h3').click(function() {
-  		var chevronClosed = ".chevron";
-  		var chevronOpen = ".chevron-bottom";
-      $(this).next().toggle('slow');
-      $(chevronClosed).hide();
-      // return false;
-  }).next().hide();
+	$('.box').click(function(){
+		$(this).children().slideToggle('slow');
+		$(this).toggleClass('box-expanded');
+		//add function that will expand element to full size of div and hide other boxes
+		// $(this).removeClass('box').addClass('box-expanded');
+	});
 });
-
-//enter rotated chevron once clicked
-// jQuery(document).ready(function(){
-//   $('.coverage-group h3').click(function() {
-//       $(this).next().toggle('slow');
-//       return false;
-//   }).next().hide().show(".chevron .right");
-// });
-
-//<span class="chevron right"></span>
-
-
-// jQuery(document).ready(function(){
-// 	var content = ("<p>This is extra content that will be displayed</p>")
-// 	if ($(window).width() >= 768){	
-// 		$(".about").append(content);
-// 	}
-// });
-
-
