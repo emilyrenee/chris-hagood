@@ -1,13 +1,30 @@
-
-jQuery(document).ready(function(){
-	$('.box').click(function(){
-		$(this).children().slideToggle('slow');
-		$(this).toggleClass('box-expanded');
-    	$("html, body").animate({ scrollTop: $(".box-expanded").offset().top }, 300);
-    		return true;
-		//add function that will expand element to full size of div and hide other boxes
-		// $(this).removeClass('box').addClass('box-expanded');
+jQuery(document).ready(function() {
+	$('.health').click( function() {
+		$('.health-details').show();
+		$('.dropdown-toggle').click( function() {
+			$('.health-details').hide();
+		});
 	});
 });
 
+jQuery(document).ready(function() {
+	$('.life').click( function(){
+		$('.life-details').show();
+	});
 
+});
+
+// function Product(type, details, rates) {
+// 			this.type = type;
+// 			this.details = details;
+// 			this.rates = rates;
+// 		};
+
+
+// var Health = new Product(
+// 	"Health",
+// 	"Text Here",
+// 	"Rates Here"
+// 	);
+
+// var Vision = new Product();
