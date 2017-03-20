@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+jQuery(document.ready(function() {
 	$('.health').click( function() {
 		$('.health-details').show();
 		$('.dropdown-toggle').click( function() {
@@ -13,6 +13,11 @@ jQuery(document).ready(function() {
 	});
 
 });
+
+$.getJSON('./products.json', function(data) {
+	console.log(data);
+});
+
 
 // function Product(type, details, rates) {
 // 			this.type = type;
