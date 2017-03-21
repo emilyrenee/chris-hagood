@@ -1,22 +1,22 @@
-jQuery(document.ready(function() {
-	$('.health').click( function() {
+jQuery(document).ready(function() {
+	$('.health').click(function() {
 		$('.health-details').show();
-		$('.dropdown-toggle').click( function() {
+		$('.dropdown-toggle').click(function() {
 			$('.health-details').hide();
 		});
 	});
 });
 
-jQuery(document).ready(function() {
-	$('.life').click( function(){
-		$('.life-details').show();
-	});
+// jQuery(document).ready(function() {
+// 	$('.life').click( function(){
+// 		$('.life-details').show();
+// 	});
 
-});
+// });
 
-$.getJSON('./products.json', function(data) {
-	console.log(data);
-});
+// $.getJSON('./products.json', function(data) {
+// 	console.log(data);
+// });
 
 
 // function Product(type, details, rates) {

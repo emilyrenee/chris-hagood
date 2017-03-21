@@ -20,6 +20,11 @@ ul {
 	font-size: 175%;
 }
 
+.gutter {
+	max-width: 95%;
+	padding: 1em;
+}
+
 
 /*********HEADER**********/
 
@@ -47,6 +52,27 @@ ul {
 }
 
 
+.hero {
+	height: 220px;
+	background: url(../img/jumbotron.jpg) no-repeat;
+	/*background-position: 100% 400%;*/
+    background-size: cover;
+    padding: 10px;
+    margin: 0;	
+}
+
+.hero span {
+	color: rgba(240, 240, 240, .7);
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+}
+
+.btn-primary-outline {
+	background-color: transparent;
+	border: 1px solid #F0F0F0 !important;
+	margin-top: 2.75em;
+}
+
 /*********** COVERAGE LIST *****************/
 
 .product {
@@ -63,8 +89,8 @@ ul {
 
 /***********ABOUT *****************/
 .main {
-	color: #00B5B5;
 	background-color: #F0F0F0;
+	color: #3E4651;
 }
 
 
@@ -80,6 +106,10 @@ ul {
 	border: none;
 	margin: .25em;
 }
+
+.portrait {
+	padding: 2em 0em;
+}	
 	
 /***********CONTACT *****************/
 
@@ -118,27 +148,22 @@ ul {
 		margin-top: 0;
 	}
 
-	#hero {
-		height: 220px;
-	}
-
 	.hero {
-		max-height: 100%;
-		background: url(../img/jumbotron.jpg) no-repeat;
-		background-position: 50% 55%;
-	    background-size: cover;
-	    padding: 10px;
+		height: 220px;
+		/*background-position: 50% 55%;*/
 	}
 
 	.hero span {
-		margin-top: 3.5em;
+		margin-top: 3em;
 		margin-right: .6em;
-		text-align: right;
+		margin-top: 1em;
+		margin-right: .6em;
 		font-size: 180%;
 		color: rgba(240, 240, 240, .7);
-		padding: 1em;
-		width: 70%;
 		font-family: 'Questrial', sans-serif;
+	}
+	.btn-primary-outline {
+		margin-top: .5em;
 	}
 
 }
