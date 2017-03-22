@@ -35,7 +35,7 @@ ul {
 .orange-banner {
 	background-color: #F16233;
 	color: #3E4651;
-	padding: .5em 4em;
+	padding: .75em 4em;
 }
 
 .orange-banner span {
@@ -73,6 +73,15 @@ ul {
 	margin-top: 2.75em;
 }
 
+.btn-primary-outline:hover {
+	border: 2px solid #F16233 !important;
+	color: #F16233 !important;
+}
+
+.btn-primary-outline:visited {
+	color: #F16233 !important;
+}
+
 /*********** COVERAGE LIST *****************/
 
 .product {
@@ -83,8 +92,13 @@ ul {
 .licenses {
 	background: url(../img/play.png);
 	background-color: #F0F0F0;
+	text-align: center;
 }
 
+
+.licenses-wrap {
+	padding-top: 2.5em;
+}
 
 
 /***********ABOUT *****************/
@@ -101,10 +115,8 @@ ul {
 
 
 .logos {
-	max-width: 150px;
-	max-height: 150px;
-	border: none;
-	margin: .25em;
+	padding: .25em;
+	max-width: 200px;
 }
 
 .portrait {
@@ -116,7 +128,7 @@ ul {
 .main-footer {
 	background-color: #3E4651;
 	color: #F0F0F0;
-	padding: 15px;
+	padding: 4em 0 3em 0;
 }
 
 .main-footer li {
@@ -127,14 +139,18 @@ ul {
 .copyright {
 	font-size: 60%;
     color: #F16233;
-    padding-top: 1em;
+    padding-top: 2.5em;
     text-align: center;
 }
 
+/***************MODAL*****************/
 
-
-
-
+.dropdown-custom {
+	font-family: 'Oswald', sans-serif;
+}
+.modal-header-custom {
+	color: #00B5B5;
+}
 /***************MEDIA QUERRIES*****************/
 
 @media (min-width: 769px) {
@@ -164,6 +180,18 @@ ul {
 	}
 	.btn-primary-outline {
 		margin-top: .5em;
+	}
+
+	.main h2 {
+		padding-top: 1.75em;
+	}
+
+	.licenses-wrap {
+		margin-left: 4.5em;
+	}
+
+	.licenses h2 {
+		padding: .5em 0;
 	}
 
 }
