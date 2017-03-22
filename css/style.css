@@ -8,9 +8,9 @@ body {
 
 }
 
-ul {
+/*ul {
 	list-style: none;
-}
+}*/
 
 .large-text {
 	display: inline-block;
@@ -78,10 +78,6 @@ ul {
 	color: #F16233 !important;
 }
 
-.btn-primary-outline:visited {
-	color: #F16233 !important;
-}
-
 /*********** COVERAGE LIST *****************/
 
 .product {
@@ -107,10 +103,8 @@ ul {
 	color: #3E4651;
 }
 
-
-.hidden {
-	display: none;
-	color: #00B5B5;
+.main h2 {
+	color: #6F7D90;
 }
 
 
@@ -122,6 +116,8 @@ ul {
 .portrait {
 	padding: 2em 0em;
 }	
+
+
 	
 /***********CONTACT *****************/
 
@@ -129,6 +125,10 @@ ul {
 	background-color: #3E4651;
 	color: #F0F0F0;
 	padding: 4em 0 3em 0;
+}
+
+.main-footer ul {
+	list-style: none;
 }
 
 .main-footer li {
@@ -148,9 +148,28 @@ ul {
 .dropdown-custom {
 	font-family: 'Oswald', sans-serif;
 }
+
 .modal-header-custom {
-	color: #00B5B5;
+	color: #6F7D90;
 }
+
+.dropdown-menu li:hover {
+	background-color: #A9BFDD;
+}
+.modal-body {
+	color: #3E4651;
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+	background-color: #F0F0F0;
+}
+
+.modal-body li {
+	margin: none;
+}
+
 /***************MEDIA QUERRIES*****************/
 
 @media (min-width: 769px) {
