@@ -147,10 +147,12 @@ body {
 
 .dropdown-custom {
 	font-family: 'Oswald', sans-serif;
+	margin: 2em 0;
 }
 
 .modal-header-custom {
 	color: #6F7D90;
+	padding: 30px !important;
 }
 
 .dropdown-menu li:hover {
@@ -158,6 +160,7 @@ body {
 }
 .modal-body {
 	color: #3E4651;
+	padding: 30px !important;
 }
 
 .modal-body,
@@ -169,6 +172,21 @@ body {
 .modal-body li {
 	margin: none;
 }
+
+.product {
+	background-color: white;
+}
+
+/***************LOGO SLIDER *****************/
+.item {
+	padding-top: 2.5em;
+	padding-left: 5em;
+}
+
+.item img {
+	max-height: 180px;
+}
+
 
 /***************MEDIA QUERRIES*****************/
 
@@ -211,6 +229,10 @@ body {
 
 	.licenses h2 {
 		padding: .5em 0;
+	}
+
+	.item {
+		padding-left: 0;
 	}
 
 }

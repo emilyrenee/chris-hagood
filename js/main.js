@@ -1,5 +1,4 @@
-// //Initialize Carousel
-// $('.carousel').carousel();
+
 
 jQuery(document).ready(function() {
 	$('.health').click(function() {
