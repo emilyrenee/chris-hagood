@@ -17,7 +17,7 @@ body {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	color: #00B5B5;
-	font-size: 175%;
+	font-size: 200%;
 }
 
 .gutter {
@@ -57,8 +57,12 @@ body {
 	background: url(../img/jumbotron.jpg) no-repeat;
 	/*background-position: 100% 400%;*/
     background-size: cover;
-    padding: 10px;
+    /*padding: 2em;*/
     margin: 0;	
+}
+
+.hidden-xs {
+	padding-top: 1em;
 }
 
 .hero span {
@@ -92,11 +96,6 @@ body {
 }
 
 
-.licenses-wrap {
-	padding-top: 2.5em;
-}
-
-
 /***********ABOUT *****************/
 .main {
 	background-color: #F0F0F0;
@@ -114,7 +113,8 @@ body {
 }
 
 .portrait {
-	padding: 2em 0em;
+	padding: 2em 0;
+	margin: auto;
 }	
 
 
@@ -129,17 +129,21 @@ body {
 
 .main-footer ul {
 	list-style: none;
+	font-size: 150%;
+	display: block;
+	margin: auto;
 }
 
 .main-footer li {
 	margin-left: none;
-	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Oswald', sans-serif;*/
 }
 
 .copyright {
 	font-size: 60%;
     color: #F16233;
-    padding-top: 2.5em;
+    padding-top: 4em;
+    padding-bottom: 1em;
     text-align: center;
 }
 
@@ -157,7 +161,9 @@ body {
 
 .dropdown-menu li:hover {
 	background-color: #A9BFDD;
+	margin-right: .4em;
 }
+
 .modal-body {
 	color: #3E4651;
 	padding: 30px !important;
@@ -192,6 +198,11 @@ body {
 
 @media (min-width: 769px) {
 
+	.content-wrap {
+		max-width: 1500px;
+		margin: auto;
+	}
+
 	#header-container {
 		height: 150px;
 	}
@@ -220,11 +231,18 @@ body {
 	}
 
 	.main h2 {
-		padding-top: 1.75em;
+		padding-top: 3em;
 	}
 
-	.licenses-wrap {
-		margin-left: 4.5em;
+	.portrait {
+		max-width: 370px !important;
+		margin: none;
+		padding: 6em 0em;
+	}
+
+	.carousel {
+		padding-top: 2em;
+		padding-bottom: 3.25em;
 	}
 
 	.licenses h2 {

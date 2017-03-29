@@ -1,4 +1,12 @@
 
+jQuery(document).ready(function() {
+	$('.health').click(function() {
+		$('.health-details').show();
+		$('.dropdown-toggle').click(function() {
+			$('.health-details').hide();
+		});
+	});
+});
 
 jQuery(document).ready(function() {
 	$('.health').click(function() {
