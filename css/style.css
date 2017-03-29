@@ -74,10 +74,15 @@ body {
 .btn-primary-outline {
 	background-color: transparent;
 	border: 1px solid #F0F0F0 !important;
-	margin-top: 2.75em;
+	margin-top: 20%;
 }
 
 .btn-primary-outline:hover {
+	border: 2px solid #F16233 !important;
+	color: #F16233 !important;
+}
+
+.btn-primary-outline:active {
 	border: 2px solid #F16233 !important;
 	color: #F16233 !important;
 }
@@ -129,20 +134,20 @@ body {
 
 .main-footer ul {
 	list-style: none;
-	font-size: 150%;
+	font-size: 110%;
 	display: block;
 	margin: auto;
 }
 
 .main-footer li {
 	margin-left: none;
-	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Oswald', sans-serif;
 }
 
 .copyright {
 	font-size: 60%;
     color: #F16233;
-    padding-top: 4em;
+    padding-top: 8em;
     padding-bottom: 1em;
     text-align: center;
 }
@@ -186,7 +191,6 @@ body {
 /***************LOGO SLIDER *****************/
 .item {
 	padding-top: 2.5em;
-	padding-left: 5em;
 }
 
 .item img {
@@ -235,7 +239,7 @@ body {
 	}
 
 	.portrait {
-		max-width: 370px !important;
+		width: 400px;
 		margin: none;
 		padding: 6em 0em;
 	}
