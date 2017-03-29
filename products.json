@@ -1,0 +1,46 @@
+{
+	"product": [
+		{
+			"type": "Health",
+			"details": "Please call or email Chris for more information about this product."
+		},
+		{
+			"type": "Life",
+			"details": "20 year term plap. Large face amounts for low premiums, whole life (level premiums). Plans are portable. Cover yourself and/or your dependents. For groups of 15 employees or more, can offer Guaranteed Issued Life Insurance up to $100,000 with no health questions.",
+			"rates": "Male, non-smoker, age 31 can get $100,000 for $5.32 per week"
+		},
+		{
+			"type": "Vision",
+			"details": "Large network of providers. $15 co-pay for annual exams. $25 co-pay for lenses. Frames covered up to $130 and up to $130 for contacts.",
+			"rates": "$2.75/employee/week"
+		},
+		{
+			"type": "Dental",
+			"details": "Please call or email Chris for more information about this product."
+		},
+		{
+			"type": "Cancer",
+			"details": "Covers 28 different items. $100 per year wellness benefit. Large monthly radiation/chemo benefit. Surgical benefits. Transportation. Blood/plasma.",
+			"rates": "as low as $4/week",
+			"brochure": ""
+		},
+		{
+			"type": "Final Expenses",
+			"details": "Please call or email Chris for more information about this product."
+		},
+		{
+			"type": "Disability",
+			"details": "Protects your paycheck - replaces 60% of salary (tax free) and pays directly to enrollee. 24/7 coverage ON and OFF the job.",
+			"rates": "(By Age) 20-29…..$6.83 per week, 30-39…..$7.75 per week, 40-49…..$8.56 per week, 50-59…..$9.91 per week"
+		},
+		{
+			"type": "Accidental",
+			"details": "Please call or email Chris for more information about this product.",
+			"brochure": ""
+		},
+		{
+			"type": "Hospital Plans",
+			"details": "Please call or email Chris for more information about this product."
+		}
+	]
+}
